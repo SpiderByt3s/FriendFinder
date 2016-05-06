@@ -8,29 +8,22 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </head>
 <body>
-
-	<div class="jumbotron container">
-		<div class="container">
-			<h1><span class = "glyphicon glyphicon-fire"></span>FriendFinder</h1>
-			<hr>
-			<h3>
-				Answer a few basic questions.
-				<br />
-				Then find the friend with the greatest compatibility!
-			</h3>
-			<p>
-				<a href ="/survey"><button type="button" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-credit-card"></span> Go to Survery</button></a>
-			</p>
-		</div>
-	</div>
-
 	<div class ="container">
-	<p>
-		<a id ="apiTable" href="/api/survey">API Friends List</a>
-		|
-		<a id = "waitlist" href="https://github.com/bilalmian/FriendFinder">Github Repo</a>
-	</p>
-
+		<div class="jumbotron container text-center">
+			<div class="container">
+				<h1><span class = "glyphicon glyphicon-heart"></span> Friend Finder</h1>
+				<h2>Answer a few basic questions.</h2>	
+				<h2>Then find the friend with the greatest compatibility!</h2>
+				<p>
+					<a href ="/survey"><button type="button" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-list-alt"></span> Go to Survey</button></a>
+				</p>
+			</div>
+		</div>	
+		<p>
+			<a href="/api/friendsAPI">API Friends List</a>
+			|
+			<a href="https://github.com/bilalmian/FriendFinder">Github Repo</a>
+		</p>
 	</div>
 </body>
 </html>
