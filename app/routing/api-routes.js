@@ -1,21 +1,25 @@
 var express = require('express');
 var path = require('path');
-var friendsArray = require('../data/friends.js');
+var friends = require('../data/friends.js');
 
 // Sets up routing for server app
 // ============================================================
 var router = express.Router();
 
-router.get('/api/friendsAPI', function(req, res){
-	res.json(friendsArray);
+router.post('/api/friends', function(req, res){
+
+	console.log(req);
+	
+	var newSurvey = req.body;
+
+	console.log(newSurvey);
+
+	friends.addFriend(newSurvey);
+
 });
 
-router.post('/api/friendsAPI', function(req, res){
-	friendsArray.push(req.body);
-		res.json(friendsArray);
+router.get('/api/friends', function(req, res){
+	res.json(friends.friendsArray);
 });
-
-
 
 module.exports = router;
-

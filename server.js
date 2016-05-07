@@ -14,7 +14,7 @@ app.use(bodyParser.text());
 app.use(bodyParser.json({type:'application/vnd.api+json'}));
 
 // Sets up routes
-app.get('/api/friendsAPI', apiRoute);
+app.get('/api/friends', apiRoute);
 app.use('/', homeRoute);
 
 app.listen(PORT, function(){
