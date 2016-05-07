@@ -6,14 +6,16 @@ var friendsArray = require('../data/friends.js');
 // ============================================================
 var router = express.Router();
 
+router.get('/api/friendsAPI', function(req, res){
+	res.json(friendsArray);
+});
+
 router.post('/api/friendsAPI', function(req, res){
 	friendsArray.push(req.body);
 		res.json(friendsArray);
 });
 
-router.get('/api/friendsAPI', function(req, res){
-	res.json(friendsArray);
-});
+
 
 module.exports = router;
 
